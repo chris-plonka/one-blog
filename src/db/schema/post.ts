@@ -9,7 +9,7 @@ const visibilities = ['public', 'private'] as const
 export type Visibility = (typeof visibilities)[number]
 export const visibilityEnum = pgEnum('visibility', visibilities)
 
-export const posts = pgTable('post', {
+export const posts = pgTable('posts', {
   id: text('id').notNull().primaryKey().$defaultFn(createId),
   authorId: text('author_id')
     .notNull()
