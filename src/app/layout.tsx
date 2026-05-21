@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   },
   authors: {
     name: MY_NAME,
-    url: 'https://nelsonlai.dev'
+    url: ''
   },
   openGraph: {
     title: SITE_TITLE,
